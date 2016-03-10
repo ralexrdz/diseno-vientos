@@ -1,0 +1,444 @@
+/*---------------------------------------------FONTS*/
+$route_fonts:"../fonts/";
+$circular:(
+	black:$route_fonts + "circular_black.ttf",
+	bold:$route_fonts + "circular_bold.ttf",
+	book:$route_fonts + "circular_book.ttf",
+	medium:$route_fonts + "circular_medium.ttf"
+	);
+
+@font-face{
+	font-family: circular_black;
+	src: url(map-get($circular, black));
+} 
+
+@font-face{
+	font-family: circular_bold;
+	src: url(map-get($circular, bold));
+} 
+
+@font-face{
+	font-family: circular_book;
+	src: url(map-get($circular, book));
+} 
+
+@font-face{
+	font-family: circular_medium;
+	src: url(map-get($circular, medium));
+} 
+
+
+
+/*--------------------------------------------COLORS*/
+/* BASICS */
+$white: #F5F6F7;
+$black: #232625;
+$gray: #ABA7A3;
+
+/* PRINCIPAL Colors*/
+$green:#42F475;  //-- call to action
+$yellow:#E6EA59; //-- offer 
+$register:#5151F4; //-- register
+
+/* OVERS */
+$green_over:#2FAF52;
+$yellow_over:#A2A43E;
+$register_text:#1D1D57;
+
+/* Secondary Colors */
+$badass: #bada55;
+$white: #F5F6F7;
+
+
+/* blacks */
+
+$green-black:#08332C;
+
+/* Secciones */
+$casos:#B9F6F9;
+
+
+/*------------------------------------------Elemental Styles*/
+body { 
+	font-family: circular_book;
+  margin: 0px;
+  padding: 0px; 
+  background-color: $badass; 
+}
+
+strong{
+	font-family: circular_black;
+}
+
+li{
+	display: inherit;
+}
+
+h1{
+	font-family: circular_bold;
+	padding-left: 15px !important;
+}
+
+ /* GENERAL CONTAINERS INDEX */
+	/* ------------------ ----------------- ----------------- ----------------- TOP MENU */	
+	 #top-container{ 
+	 }	
+		 .navbar-right {
+		    margin-right: 0px !important; 
+			}
+		 .navbar-nav>li>a {
+		    padding-top: 30px;
+		    padding-bottom: 15px;
+		    min-height: 80px;
+		    }
+		 .navbar-default{
+			color: $white;
+		 }
+		 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	   		 max-height: 500px;
+			 }
+		.logo img{
+			    height: 70px;
+	    		margin-top: -10px;
+		}
+
+		.navbar-header{
+			height: 80px;
+		}
+		.navbar-toggle{
+			border: 0px;
+			margin-top: 20px;
+		}
+		#map_btn{
+			height: 80px;
+		}
+		
+		#map_btn :hover{
+			background-color: $green_over;
+		}
+
+		#map_btn img{
+			cursor: pointer;
+			padding-top: 14px;
+			padding-bottom: 17px;
+			background-color:$green;
+			padding-left: 15px;
+			padding-right: 15px;
+
+		}
+
+	/* ------------------  */
+	/* ------------------------------------------------------------------------ HOME CONTAINER */	
+
+	 #home-container{  
+		padding-top:120px;
+		height: 100vh;
+		background-color: $black;
+	 }
+	 .form-control{
+				border: 0px;
+				font-size: 20px;
+				}
+
+
+		.call_to_action{
+			font-family: circular_black;
+			font-size: 60px;
+			color: $white;
+			letter-spacing: 1px;
+			text-align: center;
+			padding-top: 10%;	
+		}
+
+		
+		.btns_home{
+		margin-top: 40px;	
+		}
+
+		.form-home{
+			height: 65px;
+			border-radius: 8px;
+		}
+		.input-group-addon{
+			border: 0px;
+			border-radius: 8px;
+			padding: 6px 20px;
+    		font-size: 24px;
+		}
+			.need{
+				background-color: $green;
+				color: $green_over;
+			}
+			.offer{
+				background-color: $yellow;
+				color: $yellow_over;
+
+			}
+		.btns_home{
+			.col-md-6{
+				margin-top: 30px;
+			}
+		}
+
+	/* ------------------  */
+	/* ----------------------------------------------------------------------- BENEFITS CONTAINER */
+
+	/*-----------COLORS 4 THIS SECTION*/
+	
+		$aqua:#33AA96;
+		$aqua_1:#43C9B5;
+		$aqua_2:#3FBCA7;
+		$aqua_3:#39B79F;
+		$text_dark:#0D4239;
+
+
+	/*-------*/	
+
+	 .benefits-container{
+	 	background-color: $aqua;
+	 	.col-md-4{
+	 		padding-left:40px;
+	 		padding-right:40px;
+	 	}
+		.title{
+			position: relative;
+			top: -90px;
+			font-size: 40px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			background-color: $aqua;
+			color: $white;
+		}
+
+		h1{
+			margin:0px;
+			padding: 0px;
+			font-family: circular_black;
+			padding-bottom: 30px;
+		}
+
+		li{
+			font-size: 20px;
+		}
+		img{
+			height: 100px;
+			margin-bottom: 30px;
+		}
+
+		 }
+		.projects, .business, .individual{
+			padding-top: 40px;
+			min-height:560px;
+		}
+
+		 .projects{
+		 	background-color: $aqua_1;
+		 }
+		 .business{
+		 	background-color: $aqua_2;
+		 }
+		.individual{
+		 	background-color: $aqua_3;
+		 }
+		.btn_registrate{
+			z-index: 100;
+		    background-color: $register;
+		    color: $register_text;
+		    border: 0px;
+		    padding: 15px;
+		    border-radius: 6px;
+		}
+		.arrow{
+			position: absolute;
+			left: 40%;
+            bottom: -119px;
+            z-index: 1;
+		}
+		
+		.colaborar{
+			min-height: 100px;
+			background-color: #EDFCF9;
+			text-align: center;
+			z-index: -1;
+			padding-top: 190px;
+			padding-bottom: 40px;
+			color: $text_dark;
+			p{	
+				font-size: 19px;
+			}
+			
+			
+		}
+
+		.icn_colab{
+				position: relative;
+				top: -15px;
+				text-align: center;
+				height: 0px;
+
+				img{
+				
+				position: relative;
+				height: 200px;
+				
+				}
+
+			}
+	/* ------------------  */
+	/* ----------------------------------------------------------------------- BENEFITS CONTAINER */
+	/*-----------COLORS 4 THIS SECTION*/
+	
+		
+		$perl:#F7F7F7;
+		$b_perl:#ECEDEB;
+
+
+	/*-------*/	
+	 .category-40ways{
+		
+		
+
+	 	.left, .right{
+	 		
+			position: relative;
+			min-height: 500px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+	 	} 
+
+	 	.left{
+			background-color: $perl;
+			
+	 	}
+	 	.right{
+	 		background-color: $b_perl;
+	 		text-align: right;
+			
+
+	 	}
+
+
+	 }
+
+	 .circle{
+	 		margin-top: 15px;
+	 	    height: 10px;
+		    width: 10px;
+		    background-color: $gray;
+		    border-radius: 5px;
+	 }
+
+	 .circles_right{
+		float: right;
+	 }
+	
+	.circle_active{
+		background-color: $green;
+	}
+
+
+
+	/* ------------------  */
+	/* ----------------------------------------------------------------------- Casos CONTAINER */
+
+	 .casos-container{
+	 	
+	 	background-color: $casos;
+	 	padding-top: 30px;
+	 	padding-bottom: 30px;
+
+	 	h1{
+			padding-bottom: 20px;
+	 	}
+
+	 }
+
+	 .casos{
+	 	.foto_project{
+	 		background-color: black;
+	 		height: 236px;
+	 		border-radius: 10px 10px 0px 0px;
+	 	}
+	 	.texto_project{
+			background-color: $white;
+			padding: 35px;
+			padding-top: 40px;
+			border-radius: 0px 0px 10px 10px;
+			font-size: 18px;
+			
+	 	}
+	 	.col-md-4{
+	 		
+	 		padding-bottom: 60px;
+	 		
+	 	}
+
+	 	.sign{
+	 		font-size: 22px;
+	 		padding-top: 20px;
+	 	}
+
+	 	.brand{
+	 		color: $green;
+	 	}
+	 }
+
+		.project_options{
+			display: flex;
+			.circle{
+				margin: 20px;
+			}
+		}
+
+	/* ------------------  */
+	/* ----------------------------------------------------------------------- WE- CONTAINER */
+
+	
+	 .we-container{
+
+	 	padding-top: 30px;
+	 	padding-bottom: 30px;
+		background-color: $white;
+
+		.frase{
+			padding-top: 70px;
+			padding-bottom: 50px;
+		}
+
+
+	 }
+
+	 	.foto_we{
+	 		height: 300px;
+	 		border-radius:10px;
+	 		background-color: $black;
+	 	}
+
+
+	 /* ------------------  */
+	 /* ----------------------------------------------------------------------- FOOTER */
+
+	 .footer-container{
+	 	
+	 	padding-top: 60px;
+	 	padding-bottom: 60px;
+		color: $white;
+	 	background-color: $black;
+
+	 	li, p{
+	 		padding-bottom: 15px;
+	 		padding-top: 15px;
+	 	}
+
+
+	 }
+
+ /* MEDIAS */
+@media(max-width: 992px){
+	
+	.no_mobile{
+		display: none;
+	}
+
+}
