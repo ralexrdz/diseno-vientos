@@ -1,3 +1,33 @@
+/*---------------------------------------------ESTILOS NO DEFINITIVOS*/
+
+.foto1{
+	background-image: url(../images/1.jpg);
+	background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.foto2{
+	background-image: url(../images/2.jpg);
+	background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.foto3{
+	background-image: url(../images/3.jpg);
+	background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 /*---------------------------------------------FONTS*/
 $route_fonts:"../fonts/";
 $circular:(
@@ -32,7 +62,7 @@ $circular:(
 /*--------------------------------------------COLORS*/
 /* BASICS */
 $white: #F5F6F7;
-$black: #232625;
+$black: #28282D;
 $gray: #ABA7A3;
 
 /* PRINCIPAL Colors*/
@@ -73,44 +103,59 @@ strong{
 li{
 	display: inherit;
 }
+a {
+    color: inherit;
+}
+	a:hover, a:active, a:focus{
+	 		text-decoration: none !important;
+	 		color: inherit;
+	 		opacity: .5;
+	 	}
+
 
 h1{
 	font-family: circular_bold;
 	padding-left: 15px !important;
 }
 
+#map{
+	cursor: pointer;
+}
+
+.upper{
+	text-transform: uppercase;
+}
  /* GENERAL CONTAINERS INDEX */
 	/* ------------------ ----------------- ----------------- ----------------- TOP MENU */	
 	 #top-container{ 
 	 }	
 		 .navbar-right {
-		    margin-right: 0px !important; 
+		    margin-right: 0px !important;
+		    height: 55px; 
 			}
 		 .navbar-nav>li>a {
-		    padding-top: 30px;
+		    padding-top: 16px;
 		    padding-bottom: 15px;
 		    min-height: 80px;
+		    letter-spacing: 1px;
 		    }
 		 .navbar-default{
 			color: $white;
 		 }
 		 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-	   		 max-height: 500px;
 			 }
 		.logo img{
-			    height: 70px;
-	    		margin-top: -10px;
+			    height: 59px;
+	    		margin-top: -17px;
 		}
 
 		.navbar-header{
-			height: 80px;
 		}
 		.navbar-toggle{
 			border: 0px;
 			margin-top: 20px;
 		}
 		#map_btn{
-			height: 80px;
 		}
 		
 		#map_btn :hover{
@@ -119,11 +164,13 @@ h1{
 
 		#map_btn img{
 			cursor: pointer;
-			padding-top: 14px;
-			padding-bottom: 17px;
+			padding-top: 11px;
+			padding-bottom: 9px;
 			background-color:$green;
-			padding-left: 15px;
-			padding-right: 15px;
+			padding-left: 10px;
+			padding-right: 10px;
+			height: 52px;
+			border-radius: 29px;
 
 		}
 
@@ -134,6 +181,13 @@ h1{
 		padding-top:120px;
 		height: 100vh;
 		background-color: $black;
+		background-image: url("../images/map.png");
+		background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		background-blend-mode: multiply;
 	 }
 	 .form-control{
 				border: 0px;
@@ -149,7 +203,13 @@ h1{
 			text-align: center;
 			padding-top: 10%;	
 		}
+		.first_phrase{
 
+		}
+
+		.second_phrase{
+			font-size: 33px;
+		}
 		
 		.btns_home{
 		margin-top: 40px;	
@@ -179,7 +239,10 @@ h1{
 				margin-top: 30px;
 			}
 		}
-
+		
+		#ofrezco, #necesito{
+			cursor: pointer;
+		}
 	/* ------------------  */
 	/* ----------------------------------------------------------------------- BENEFITS CONTAINER */
 
@@ -291,7 +354,7 @@ h1{
 	
 		
 		$perl:#F7F7F7;
-		$b_perl:#ECEDEB;
+		$b_perl:#E2E2E2;
 
 
 	/*-------*/	
@@ -336,7 +399,10 @@ h1{
 	.circle_active{
 		background-color: $green;
 	}
-
+	
+	.counter_benefits{
+		padding-left: 15px;
+	}
 
 
 	/* ------------------  */
@@ -370,7 +436,7 @@ h1{
 	 	}
 	 	.col-md-4{
 	 		
-	 		padding-bottom: 60px;
+	 		padding-bottom: 5px;
 	 		
 	 	}
 
@@ -410,9 +476,17 @@ h1{
 	 }
 
 	 	.foto_we{
-	 		height: 300px;
+	 		height: 600px;
 	 		border-radius:10px;
 	 		background-color: $black;
+	 			background-image: url(../images/equipo.jpg);
+
+			background-repeat: no-repeat;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+
 	 	}
 
 
@@ -431,14 +505,121 @@ h1{
 	 		padding-top: 15px;
 	 	}
 
+	 	
 
 	 }
 
- /* MEDIAS */
+	 .redes, .links, .datos_contacto{
+	 	min-height: 100px	;	
+	 }
+
+	 .redes{
+	 	font-size: 21px;
+	 }
+
+	 .links, .datos_contacto{
+	 	border-right: 1px solid $white;
+	 }
+	 .logo_footer img{
+	 	width: 45%;
+	 }
+	 .facebook {
+		color: #134DDA;
+	 }
+	 .twitter {
+		color: #2AB1E8;
+	 }
+	 .github {
+	 	color: $white;
+
+	 }
+	 .facebook, .twitter, .github{
+		margin-left: 31px;
+	 }
+	 .map_footer{
+	 	background-color: $black;
+	 	background-image: url("../images/map.png");
+	 	background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		background-blend-mode: multiply;
+	 	padding-top: 30px;
+	 	padding-bottom: 30px;
+	 }
+
+	#map:hover{
+	 	background-color: $green;
+	 	
+	 }
+
+ /* ----------------------------------------------  MEDIAS */
+ 
 @media(max-width: 992px){
 	
 	.no_mobile{
 		display: none;
 	}
 
+	.benefits-container .text-center{
+		text-align: right;
+	}
+
+		.redes, .links, .datos_contacto{
+		text-align: center !important;
+		border: 0px;
+
+	}
+
+	.footer-container img{
+		height: 100px;
+		padding-top: 30px;
+	}
+
+	
+}
+
+@media(max-width: 762px){
+	
+	#map_btn img{
+		width: 100vh;
+		height: 80px;
+	}
+	
+
+	
+}
+
+
+// ########################################################################################################################################
+// MAP ELEMENTS
+
+.top-bar-map{
+	background-color: $white;
+}
+ 
+.logo_map img{
+	height: 70px;	
+}
+
+
+ 
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+	max-height: 500px;	
+}
+
+
+
+ 
+#map_btn{	
+}
+
+
+
+
+ 
+#map_btn{
+	height: 55px;
+	margin-top: 2px;	
 }
